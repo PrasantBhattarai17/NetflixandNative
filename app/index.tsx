@@ -1,12 +1,12 @@
-import { View, Text, ScrollView, KeyboardAvoidingView } from 'react-native'
+import { View} from 'react-native'
 import React from 'react'
 import Signin from '../components/Signin'
 
 const index = () => {
   return (
     <View className='flex-1 h-[1000px]'>
-      <Signin/>
-    </View>
+      <Signin/>  
+        </View>
   )
 }
 
