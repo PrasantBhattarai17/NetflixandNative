@@ -1,10 +1,11 @@
 import { View, Text, Image, TextInput, Pressable, TouchableOpacity } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { Logo } from "./utils/constants";
 import Checkbox from "expo-checkbox";
 import { router } from "expo-router";
 
 const LoginPage = () => {
+    const [isChecked, setChecked] = useState<boolean>(false);
   return (
     <View className="h-full w-full bg-black">
       <Image
@@ -26,7 +27,7 @@ const LoginPage = () => {
           placeholderTextColor="#b7b7b7"
           className="w-full h-16 px-4 bg-[#0f0f0f] rounded-lg text-white border-[1px] border-gray-500 mb-8"
         />
-        <Pressable className="w-full h-12 rounded-lg bg-[#e50914]">
+        <Pressable onPress={()=>router.navigate('/(drawer)/Home')} className="w-full h-12 rounded-lg bg-[#e50914]">
             <Text className="text-white font-semibold text-xl text-center my-2">
                 Sign In
             </Text>
@@ -42,7 +43,10 @@ const LoginPage = () => {
         <Text className="text-white text-lg text-center ">Forgot password?</Text>
          </Pressable>
          <View className='mx-4 flex-row'>
-         <Checkbox className="my-1" />
+         <Checkbox  value={isChecked}
+            onValueChange={setChecked}
+            className="my-1"
+            color={isChecked ? "#e50914" : undefined} />
          <Text className="text-white mx-2 text-lg font-semibold ">Remember me</Text>
          </View>
         <View className="flex-row m-4">
