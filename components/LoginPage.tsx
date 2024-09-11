@@ -27,7 +27,7 @@ const LoginPage = () => {
           placeholderTextColor="#b7b7b7"
           className="w-full h-16 px-4 bg-[#0f0f0f] rounded-lg text-white border-[1px] border-gray-500 mb-8"
         />
-        <Pressable onPress={()=>router.navigate('/(drawer)/Home')} className="w-full h-12 rounded-lg bg-[#e50914]">
+        <Pressable onPress={()=>router.navigate('/(tabs)/Home')} className="w-full h-12 rounded-lg bg-[#e50914]">
             <Text className="text-white font-semibold text-xl text-center my-2">
                 Sign In
             </Text>
