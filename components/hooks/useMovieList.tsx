@@ -3,8 +3,6 @@ import { APIoptions, Movie_API,CDN_POSTER_URL  } from '../utils/constants'
 
 const useMovieList = () => {
     const [img,setImg]=useState('');
-
-
     const fetchAllMovie=async()=>{
         const response =await fetch(Movie_API,APIoptions);
         const json=await response.json();
