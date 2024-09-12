@@ -6,6 +6,7 @@ export const  collection = require("./collection.png");
 export const  ngolo = require("./ngolo.png");
 export const  more = require("./ham.png");
 export const  downloads = require("./download.png");
+export const  video = require("./Netflix.mp4");
 
 
 
@@ -22,3 +23,5 @@ export const APIoptions = {
 
 
   export const CDN_POSTER_URL="https://image.tmdb.org/t/p/w780/";
+
+  export const Preview_Poster='https://api.themoviedb.org/3/trending/tv/day';
