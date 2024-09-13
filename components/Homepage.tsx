@@ -1,11 +1,13 @@
 import { View, Image, Text, Pressable, ScrollView } from "react-native";
 import React from "react";
-import { CDN_POSTER_URL, ngolo, Logo } from "./utils/constants";
+import { CDN_POSTER_URL, ngolo, Logo, APIoptions } from "./utils/constants";
 import useMovieList from "./hooks/useMovieList";
 import { FontAwesome } from "@expo/vector-icons";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import useTVPreviewPoster from "./hooks/useTVPreviewPoster";
+import BelowHome from "./BelowHome";
+import usePopularMovies from "./hooks/usePopularMovies";
 const Homepage = () => {
   const image_url = useMovieList();
   const posterArr = useTVPreviewPoster();
@@ -16,7 +18,7 @@ const Homepage = () => {
       </View>
     );
   return (
-    <View className="flex-1 bg-black h-[1000px]">
+    <View className="flex-1 bg-black min-h-screen">
       <View className="h-[10%] w-full flex-row items-center justify-around  my-2 absolute z-10">
         <Image className="h-12 w-12" source={ngolo} />
         <Pressable>
@@ -51,17 +53,18 @@ const Homepage = () => {
       <Text className="text-2xl font-bold text-white bg-black px-4 pb-3">
         Previews
       </Text>
-      <ScrollView horizontal className=" bg-black h-44 px-1">
+      <ScrollView horizontal className=" bg-black h-40 px-1">
         {posterArr.map((item: any) => (
           <Image
             key={item?.name}
             className="h-36 w-36 rounded-full mx-3"
-            resizeMode="cover"
+            resizeMode='stretch'
             source={{ uri: CDN_POSTER_URL + item?.poster_path }}
           />
         ))}
       </ScrollView>
-    </View>
+      <BelowHome />
+     </View>
   );
 };
 

@@ -9,7 +9,8 @@ export const  downloads = require("./download.png");
 export const  video = require("./Netflix.mp4");
 
 
-
+export const trend_api='https://api.themoviedb.org/3/trending/all/day';
+export const Popular_api='https://api.themoviedb.org/3/movie/popular';
 
 export const APIoptions = {
     method: 'GET',
