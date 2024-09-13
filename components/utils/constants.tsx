@@ -7,6 +7,7 @@ export const  ngolo = require("./ngolo.png");
 export const  more = require("./ham.png");
 export const  downloads = require("./download.png");
 export const  video = require("./Netflix.mp4");
+export const  voice = require("./voice.png");
 
 
 export const trend_api='https://api.themoviedb.org/3/trending/all/day';
@@ -21,6 +22,10 @@ export const APIoptions = {
   };
 
   export const Movie_API='https://api.themoviedb.org/3/trending/movie/week';
+
+
+  export const Search_API='https://api.themoviedb.org/3/search/movie?query=';
+  export const searchTail='&include_adult=false&language=en-US&page=1';
 
 
   export const CDN_POSTER_URL="https://image.tmdb.org/t/p/w780/";
