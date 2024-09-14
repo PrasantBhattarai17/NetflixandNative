@@ -4,7 +4,8 @@ const search =createSlice({
     name:'search',
     initialState:{
         searchData:null,
-        toggleSearch:false
+        toggleSearch:false,
+        constantData:null
     },
     reducers:{
         addSearchData:(state,action)=>{
@@ -12,8 +13,12 @@ const search =createSlice({
         },
         ToggleSearch:(state)=>{
             state.toggleSearch=!state.toggleSearch;        }
-    }
+    ,
+    addConstantdata:(state,action)=>{
+        state.constantData=action.payload;
+    },
+}
 })
 
-export const {addSearchData,ToggleSearch} =search.actions;
+export const {addSearchData,ToggleSearch,addConstantdata} =search.actions;
 export default search.reducer;

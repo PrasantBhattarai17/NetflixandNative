@@ -22,8 +22,9 @@ export const APIoptions = {
   };
 
   export const Movie_API='https://api.themoviedb.org/3/trending/movie/week';
-
-
+  export const Top_API='https://api.themoviedb.org/3/movie/top_rated';
+  
+  
   export const Search_API='https://api.themoviedb.org/3/search/movie?query=';
   export const searchTail='&include_adult=false&language=en-US&page=1';
 

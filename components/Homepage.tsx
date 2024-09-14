@@ -55,7 +55,7 @@ const Homepage = () => {
       <ScrollView horizontal className=" bg-black h-40 px-1">
         {posterArr.map((item: any) => (
           <Image
-            key={item?.name}
+            key={item?.title}
             className="h-36 w-36 rounded-full mx-3"
             resizeMode='stretch'
             source={{ uri: CDN_POSTER_URL + item?.poster_path }}

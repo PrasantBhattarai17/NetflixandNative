@@ -10,9 +10,7 @@ const Search = () => {
     <>
     <Provider store={Appstore}>
     <GestureHandlerRootView className='min-h-screen w-screen flex-1'>
-    <ScrollView className='flex-1 bg-black'>
       <SearchPage/>
-    </ScrollView>
 </GestureHandlerRootView>
     </Provider>
     </>
