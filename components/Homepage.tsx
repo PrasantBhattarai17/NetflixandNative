@@ -7,7 +7,6 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import useTVPreviewPoster from "./hooks/useTVPreviewPoster";
 import BelowHome from "./BelowHome";
-import usePopularMovies from "./hooks/usePopularMovies";
 const Homepage = () => {
   const image_url = useMovieList();
   const posterArr = useTVPreviewPoster();
@@ -19,7 +18,7 @@ const Homepage = () => {
     );
   return (
     <View className="flex-1 bg-black min-h-screen">
-      <View className="h-[10%] w-full flex-row items-center justify-around  my-2 absolute z-10">
+      <View className="h-[5%] w-full flex-row items-center justify-around  absolute z-10">
         <Image className="h-12 w-12" source={ngolo} />
         <Pressable>
           <Text className="text-lg text-white">TV Shows</Text>
