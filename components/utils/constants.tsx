@@ -8,10 +8,12 @@ export const  more = require("./ham.png");
 export const  downloads = require("./download.png");
 export const  video = require("./Netflix.mp4");
 export const  voice = require("./voice.png");
+export const  bell = require("./notificationBell.png");
 
 
 export const trend_api='https://api.themoviedb.org/3/trending/all/day';
 export const Popular_api='https://api.themoviedb.org/3/movie/popular';
+export const upcoming_api='https://api.themoviedb.org/3/movie/upcoming';
 
 export const APIoptions = {
     method: 'GET',

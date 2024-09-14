@@ -8,7 +8,6 @@ import { FlatList } from 'react-native-gesture-handler';
 const ListSearch = () => {
   const SearchedData = useSelector((store: any) => store.searched?.searchData);
   const Top = useSelector((store: any) => store.searched?.constantData);
-
   const renderMovieItem = ({ item }: { item: any }) => (
     <View className='w-full h-32 bg-[#424242] flex-row mb-3'>
       <Image
@@ -18,7 +17,7 @@ const ListSearch = () => {
         source={{ uri: CDN_POSTER_URL + item?.poster_path }}
       />
       <View className='flex-row justify-between w-[220px]'>
-        <View className='w-[90%]'>
+        <View className='w-[90%] flex-row justify-center items-center'>
           <Text className='text-lg text-white'>{item?.title}</Text>
         </View>
         <View className='flex-row items-center w-[13%]'>
@@ -37,7 +36,7 @@ const ListSearch = () => {
           </Text>
           <FlatList
             data={SearchedData}
-            keyExtractor={(item: any) => item?.poster_path}
+            keyExtractor={(item: any) => item?.id}
             renderItem={renderMovieItem}
             ListEmptyComponent={<Text className="text-white px-4">No search results available</Text>}
           />
@@ -47,7 +46,7 @@ const ListSearch = () => {
           
           <FlatList
             data={Top}
-            keyExtractor={(item: any) => item?.poster_path}
+            keyExtractor={(item: any) => item?.id}
             renderItem={renderMovieItem}
             ListEmptyComponent={<Text className="text-white px-4">No top movies available</Text>}
           />
