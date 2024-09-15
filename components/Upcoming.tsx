@@ -21,7 +21,7 @@ const Upcoming = () => {
           <View className='flex-row  mx-8 justify-between gap-4 items-center'>
             <View className='py-2'>
                 <Image tintColor='white' className='h-8 w-8 mx-4' source={bell}  />
-                <Text className='text-center text-white text-md'>Remind Me</Text>
+                <Text className='text-center text-white text-md'>Remind me</Text>
             </View>
             <View>
                 <Fontisto color='white' name='share' size={30}/>
