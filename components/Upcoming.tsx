@@ -8,7 +8,6 @@ const imageBaseURL = "https://image.tmdb.org/t/p/w500";
 
 const Upcoming = () => {
   const upcomingData = usePopularMovies(upcoming_api);
-  console.log(upcomingData)
 
   const renderUpcomingItem = ({ item }: any) => (
     <View className='flex-col items-center justify-center h-300 my-4 border-2 border-gray-400'>
