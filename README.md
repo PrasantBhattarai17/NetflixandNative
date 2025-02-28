@@ -66,7 +66,6 @@ The project uses several key configurations:
 
 Feel free to contribute to this project by creating issues or submitting pull requests.
 
-##Every Screen in my project:
 ![photo_2025-02-28_17-54-23 (2)](https://github.com/user-attachments/assets/b4784cf3-43fb-4eb9-87bf-d8abd196d074)
 ![photo_2025-02-28_17-54-24 (6)](https://github.com/user-attachments/assets/114abce1-5cfb-4ef5-a669-a4f3ed80b040)
 ![photo_2025-02-28_17-54-24 (3)](https://github.com/user-attachments/assets/d683b8d6-95ab-43a5-9a1b-08c519617aa0)
@@ -75,4 +74,3 @@ Feel free to contribute to this project by creating issues or submitting pull re
 ![photo_2025-02-28_17-54-24 (4)](https://github.com/user-attachments/assets/04bc1252-4d6a-42a3-9299-6f04b20f55af)
 ![Uploading photo_2025-02-28_17-54-23.jpg…]()
  ![photo_2025-02-28_17-54-23](https://github.com/user-attachments/assets/623efbc7-57f8-4196-a93f-f4fa57c68b59)
-Built with ❤️ using React Native and Expo
