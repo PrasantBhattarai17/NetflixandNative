@@ -6,7 +6,7 @@ const useMovieList = () => {
     const fetchAllMovie=async()=>{
         const response =await fetch(Movie_API,APIoptions);
         const json=await response.json();
-        const data=CDN_POSTER_URL+json?.results[0]?.poster_path;
+        const data=CDN_POSTER_URL+json?.results[2]?.poster_path;
         setImg(data);
     }
 

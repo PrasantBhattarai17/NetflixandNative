@@ -2,6 +2,7 @@
   "expo": {
     "name": "NetflixAndNative",
     "slug": "NetflixAndNative",
+    "newArchEnabled": true,
     "scheme": "your-app-scheme",
     "version": "1.0.0",
     "orientation": "portrait",

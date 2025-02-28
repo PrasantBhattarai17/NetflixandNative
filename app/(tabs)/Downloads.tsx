@@ -22,7 +22,7 @@ const Download = () => {
        <View className="h-48 w-48 rounded-full bg-[#424242]">
        </View>
        <View className="w-full h-12 px-5">
-       <Button  title="Setup"></Button>
+       <Button   title="Setup"></Button>
        </View>
       </View>
 

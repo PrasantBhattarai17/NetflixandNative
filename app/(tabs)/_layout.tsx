@@ -10,7 +10,7 @@ const Layout = () => {
       screenOptions={{
         tabBarStyle: {
           backgroundColor: "#121212",
-          height: 75,
+          height: 80,
           position: "absolute",
           elevation: 10,
           borderRadius: 5,
@@ -26,15 +26,15 @@ const Layout = () => {
         options={{
           title: "Home",
           tabBarIcon: ({ focused }) => (
-            <View className="flex-1 justify-center items-center">
+            <View className="flex-1 items-center">
               <Image
-                style={{ height: 28, width: 28 }}
+                style={{ height: 25, width: 25 }}
                 resizeMode="contain"
                 tintColor={focused ? "white" : "#8c8787"}
                 source={home}
               />
               <Text
-                className="text-[12px] "
+                className="text-[10px] "
                 style={{ color: focused ? "white" : "#8c8787" }}
               >
                 Home
@@ -44,7 +44,7 @@ const Layout = () => {
         }}
       />
       <Tabs.Screen name="Search" options={{ title: "Search",  tabBarIcon: ({ focused }) => (
-            <View className="flex-1 justify-center items-center mr-2">
+            <View className="flex-1  items-center ">
               <Image
                 style={{ height: 26, width: 26 }}
                 resizeMode="contain"
@@ -52,7 +52,7 @@ const Layout = () => {
                 source={search}
               />
               <Text
-                className="text-[12px] "
+                className="text-[10px] "
                 style={{ color: focused ? "white" : "#8c8787" }}
               >
                 Search
@@ -60,36 +60,36 @@ const Layout = () => {
             </View>
           ), }} />
       <Tabs.Screen name="ComingSoon" options={{ title: "Coming Soon",  tabBarIcon: ({ focused }) => (
-            <View className="flex-1 justify-center items-center mr-1">
-              <MaterialCommunityIcons name="animation-play" size={28} color={focused?'#fff':'#8c8787'} />
+            <View className="flex-1  items-center">
+              <MaterialCommunityIcons name="animation-play" size={23} color={focused?'#fff':'#8c8787'} />
               <Text
-                className="text-[11px] "
+                className="text-[10px] "
                 style={{ color: focused ? "white" : "#8c8787" }}
               >
-                Coming Soon
+                New
               </Text>
             </View>
           ), }} />
       <Tabs.Screen name="Downloads" options={{ title: "Downloads",  tabBarIcon: ({ focused }) => (
-            <View className="flex-1 justify-center items-center ml-1 mb-1">
+            <View className="flex-1  items-center  ">
               <Image
-                style={{ height: 34, width: 34 }}
+                style={{ height: 30, width: 30 }}
                 resizeMode="contain"
                 tintColor={focused ? "white" : "#8c8787"}
                 source={downloads}
               />
               <Text
-                className="text-[11px]  mx-1"
+                className="text-[10px] "
                 style={{ color: focused ? "white" : "#8c8787" }}
               >
-                Downloads
+                Down..
               </Text>
             </View>
           ), }} />
       <Tabs.Screen name="More" options={{ title: "More",  tabBarIcon: ({ focused }) => (
-            <View className="flex-1 justify-center items-center">
+            <View className="flex-1  items-center">
               <Image
-                style={{ height: 29, width: 29 }}
+                style={{ height: 29, width: 25 }}
                 resizeMode="contain"
                 tintColor={focused ? "white" : "#8c8787"}
                 source={more}
